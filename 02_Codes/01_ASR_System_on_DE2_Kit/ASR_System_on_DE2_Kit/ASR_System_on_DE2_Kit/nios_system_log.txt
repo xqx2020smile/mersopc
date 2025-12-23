@@ -1,0 +1,89 @@
+Altera SOPC Builder Version 9.12 Build 350
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2014.05.19 10:13:33 (*) mk_custom_sdk starting
+
+# 2014.05.19 10:13:33 (*) Reading project D:/03_Project/03_MFCC_Neural/DE2_Audio/nios_system.ptf.
+
+# 2014.05.19 10:13:33 (*) Finding all CPUs
+# 2014.05.19 10:13:33 (*) Finding all available components
+# 2014.05.19 10:13:33 (*) Reading D:/03_Project/03_MFCC_Neural/DE2_Audio/.sopc_builder/install.ptf
+
+# 2014.05.19 10:13:33 (*) Found 67 components
+
+# 2014.05.19 10:13:34 (*) Finding all peripherals
+
+# 2014.05.19 10:13:34 (*) Finding software components
+
+# 2014.05.19 10:13:35 (*) (Legacy SDK Generation Skipped)
+# 2014.05.19 10:13:35 (*) (All TCL Script Generation Skipped)
+# 2014.05.19 10:13:35 (*) (No Libraries Built)
+# 2014.05.19 10:13:35 (*) (Contents Generation Skipped)
+# 2014.05.19 10:13:35 (*) mk_custom_sdk finishing
+
+# 2014.05.19 10:13:35 (*) Starting generation for system: nios_system.
+
+.
+.
+.
+.
+.
+
+# 2014.05.19 10:13:36 (*) Running Generator Program for CPU
+
+# 2014.05.19 10:13:38 (*) Starting Nios II generation
+# 2014.05.19 10:13:38 (*)   Checking for plaintext license.
+# 2014.05.19 10:13:39 (*)   Couldn't query license setup in Quartus directory d:/01_install/02_quatus_nios/quartus
+# 2014.05.19 10:13:39 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2014.05.19 10:13:39 (*)   LM_LICENSE_FILE environment variable is empty
+# 2014.05.19 10:13:39 (*)   Plaintext license not found.
+# 2014.05.19 10:13:39 (*)   Checking for encrypted license (non-evaluation).
+
+# 2014.05.19 10:13:40 (*)   Couldn't query license setup in Quartus directory d:/01_install/02_quatus_nios/quartus
+# 2014.05.19 10:13:40 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2014.05.19 10:13:40 (*)   LM_LICENSE_FILE environment variable is empty
+# 2014.05.19 10:13:40 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+# 2014.05.19 10:13:40 (*)   Getting CPU configuration settings
+# 2014.05.19 10:13:40 (*)   Elaborating CPU configuration settings
+
+# 2014.05.19 10:13:40 (*)   Creating all objects for CPU
+# 2014.05.19 10:13:41 (*)     Pipeline frontend
+# 2014.05.19 10:13:44 (*)   Generating HDL from CPU objects
+# 2014.05.19 10:13:47 (*)   Creating encrypted HDL
+# 2014.05.19 10:13:49 (*) Done Nios II generation
+
+# 2014.05.19 10:13:50 (*) Running Generator Program for SDRAM
+
+# 2014.05.19 10:13:51 (*) Running Generator Program for JTAG_UART
+
+# 2014.05.19 10:13:53 (*) Running Generator Program for CPU_fpoint
+
+# 2014.05.19 10:13:56 (*) Running Generator Program for TIMER
+
+.
+
+
+# 2014.05.19 10:13:57 (*) Running Test Generator Program for SDRAM
+
+# 2014.05.19 10:13:58 (*) Making arbitration and system (top) modules.
+
+# 2014.05.19 10:14:06 (*) Generating Quartus symbol for top level: nios_system
+
+# 2014.05.19 10:14:06 (*) Symbol D:/03_Project/03_MFCC_Neural/DE2_Audio/nios_system.bsf already exists, no need to regenerate
+# 2014.05.19 10:14:06 (*) Creating command-line system-generation script: D:/03_Project/03_MFCC_Neural/DE2_Audio/nios_system_generation_script
+
+# 2014.05.19 10:14:06 (*) Running setup for HDL simulator: modelsim
+
+
+# 2014.05.19 10:14:07 (*) Completed generation for system: nios_system.
+# 2014.05.19 10:14:07 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/03_Project/03_MFCC_Neural/DE2_Audio/nios_system.ptf 
+  System HDL Model : D:/03_Project/03_MFCC_Neural/DE2_Audio/nios_system.v 
+  System Generation Script : D:/03_Project/03_MFCC_Neural/DE2_Audio/nios_system_generation_script 
+
+# 2014.05.19 10:14:07 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

@@ -1,0 +1,35 @@
+  //Example instantiation for system 'nios_system'
+  nios_system nios_system_inst
+    (
+      .AUD_ADCDAT_to_the_Audio             (AUD_ADCDAT_to_the_Audio),
+      .AUD_ADCLRCK_to_and_from_the_Audio   (AUD_ADCLRCK_to_and_from_the_Audio),
+      .AUD_BCLK_to_and_from_the_Audio      (AUD_BCLK_to_and_from_the_Audio),
+      .AUD_DACDAT_from_the_Audio           (AUD_DACDAT_from_the_Audio),
+      .AUD_DACLRCK_to_and_from_the_Audio   (AUD_DACLRCK_to_and_from_the_Audio),
+      .AUD_XCK_from_the_External_Clocks    (AUD_XCK_from_the_External_Clocks),
+      .DRAM_CLK_from_the_External_Clocks   (DRAM_CLK_from_the_External_Clocks),
+      .I2C_SCLK_from_the_AV_Config         (I2C_SCLK_from_the_AV_Config),
+      .I2C_SDAT_to_and_from_the_AV_Config  (I2C_SDAT_to_and_from_the_AV_Config),
+      .KEY_to_the_Pushbuttons              (KEY_to_the_Pushbuttons),
+      .LEDG_from_the_Green_LEDs            (LEDG_from_the_Green_LEDs),
+      .clk                                 (clk),
+      .ext_clk_27_to_the_External_Clocks   (ext_clk_27_to_the_External_Clocks),
+      .ext_clk_50_to_the_External_Clocks   (ext_clk_50_to_the_External_Clocks),
+      .in_port_to_the_Data_Read_MEM        (in_port_to_the_Data_Read_MEM),
+      .out_port_from_the_Addr_Read_MEM     (out_port_from_the_Addr_Read_MEM),
+      .out_port_from_the_Addr_Write_MEM    (out_port_from_the_Addr_Write_MEM),
+      .out_port_from_the_Data_Write_MEM    (out_port_from_the_Data_Write_MEM),
+      .out_port_from_the_Out_Ports         (out_port_from_the_Out_Ports),
+      .reset_n                             (reset_n),
+      .system_clk_from_the_External_Clocks (system_clk_from_the_External_Clocks),
+      .zs_addr_from_the_SDRAM              (zs_addr_from_the_SDRAM),
+      .zs_ba_from_the_SDRAM                (zs_ba_from_the_SDRAM),
+      .zs_cas_n_from_the_SDRAM             (zs_cas_n_from_the_SDRAM),
+      .zs_cke_from_the_SDRAM               (zs_cke_from_the_SDRAM),
+      .zs_cs_n_from_the_SDRAM              (zs_cs_n_from_the_SDRAM),
+      .zs_dq_to_and_from_the_SDRAM         (zs_dq_to_and_from_the_SDRAM),
+      .zs_dqm_from_the_SDRAM               (zs_dqm_from_the_SDRAM),
+      .zs_ras_n_from_the_SDRAM             (zs_ras_n_from_the_SDRAM),
+      .zs_we_n_from_the_SDRAM              (zs_we_n_from_the_SDRAM)
+    );
+

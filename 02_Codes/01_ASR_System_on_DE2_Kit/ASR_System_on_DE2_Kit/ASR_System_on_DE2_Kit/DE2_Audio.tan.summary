@@ -1,0 +1,126 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.321 ns
+From           : I2C_SDAT
+To             : nios_system:NiosII|AV_Config:the_AV_Config|Altera_UP_I2C:I2C_Controller|ack
+From Clock     : --
+To Clock       : CLOCK_50
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.996 ns
+From           : mem_ram_mfcc:MEM_RAM|altsyncram:altsyncram_component|altsyncram_tlv1:auto_generated|ram_block1a0~portb_address_reg6
+To             : LEDR[3]
+From Clock     : CLOCK_50
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.612 ns
+From           : altera_internal_jtag~TDO
+To             : altera_reserved_tdo
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.306 ns
+From           : altera_internal_jtag~TDIUTAP
+To             : nios_system:NiosII|CPU:the_CPU|CPU_nios2_oci:the_CPU_nios2_oci|CPU_jtag_debug_module_wrapper:the_CPU_jtag_debug_module_wrapper|CPU_jtag_debug_module_tck:the_CPU_jtag_debug_module_tck|sr[15]
+From Clock     : --
+To Clock       : altera_internal_jtag~TCKUTAP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLOCK_50'
+Slack          : -4.275 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : N/A
+From           : mem_ram_mfcc:MEM_RAM|altsyncram:altsyncram_component|altsyncram_tlv1:auto_generated|ram_block1a0~portb_address_reg6
+To             : qt_top:NO_NET|top:top_01|hidden_neural:hidden_neural_n1|mac:mac_01|next_mac_input_01[8]
+From Clock     : nios_system:NiosII|External_Clocks:the_External_Clocks|altpll:DE_Clock_Generator_System|_clk0
+To Clock       : CLOCK_50
+Failed Paths   : 542
+
+Type           : Clock Setup: 'nios_system:NiosII|External_Clocks:the_External_Clocks|altpll:DE_Clock_Generator_System|_clk0'
+Slack          : 7.086 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : 77.44 MHz ( period = 12.914 ns )
+From           : nios_system:NiosII|CPU:the_CPU|av_ld_or_div_done
+To             : nios_system:NiosII|CPU:the_CPU|M_bstatus_reg_pie
+From Clock     : nios_system:NiosII|External_Clocks:the_External_Clocks|altpll:DE_Clock_Generator_System|_clk0
+To Clock       : nios_system:NiosII|External_Clocks:the_External_Clocks|altpll:DE_Clock_Generator_System|_clk0
+Failed Paths   : 0
+
+Type           : Clock Setup: 'altera_internal_jtag~TCKUTAP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 94.80 MHz ( period = 10.548 ns )
+From           : sld_hub:auto_hub|irsr_reg[2]
+To             : sld_hub:auto_hub|tdo
+From Clock     : altera_internal_jtag~TCKUTAP
+To Clock       : altera_internal_jtag~TCKUTAP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'altera_internal_jtag~CLKDRUSER'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 372.02 MHz ( period = 2.688 ns )
+From           : pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|VELJ8121:JDCF0099|AJQN5180[2]
+To             : pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|VELJ8121:JDCF0099|DJFL8584[3]
+From Clock     : altera_internal_jtag~CLKDRUSER
+To Clock       : altera_internal_jtag~CLKDRUSER
+Failed Paths   : 0
+
+Type           : Clock Setup: 'altera_internal_jtag~UPDATEUSER'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
+From           : pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|XWDE0671[2]
+To             : pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|XWDE0671[1]
+From Clock     : altera_internal_jtag~UPDATEUSER
+To Clock       : altera_internal_jtag~UPDATEUSER
+Failed Paths   : 0
+
+Type           : Clock Hold: 'CLOCK_50'
+Slack          : -2.198 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : N/A
+From           : qt_top:NO_NET|top:top_01|out_neural:out_neural_01|sigmoid_function:sigmoid_function_01|floating_point_compare:floating_point_compare_01|factor_b[15]
+To             : qt_top:NO_NET|top:top_01|out_neural:out_neural_01|sigmoid_function:sigmoid_function_01|next_factor_b[15]
+From Clock     : CLOCK_50
+To Clock       : CLOCK_50
+Failed Paths   : 575
+
+Type           : Clock Hold: 'nios_system:NiosII|External_Clocks:the_External_Clocks|altpll:DE_Clock_Generator_System|_clk0'
+Slack          : -0.897 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : N/A
+From           : nios_system:NiosII|Data_Write_MEM:the_Data_Write_MEM|data_out[8]
+To             : mem_ram_mfcc:MEM_RAM|altsyncram:altsyncram_component|altsyncram_tlv1:auto_generated|ram_block1a0~porta_datain_reg8
+From Clock     : nios_system:NiosII|External_Clocks:the_External_Clocks|altpll:DE_Clock_Generator_System|_clk0
+To Clock       : nios_system:NiosII|External_Clocks:the_External_Clocks|altpll:DE_Clock_Generator_System|_clk0
+Failed Paths   : 39
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 1156
+
+--------------------------------------------------------------------------------------
+

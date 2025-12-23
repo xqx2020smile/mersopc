@@ -1,0 +1,18 @@
+set_global_assignment -name SOURCE_FILE CPU.ocp
+set_global_assignment -name TCL_FILE [file join $::quartus(ip_rootpath) University_Program/Input_Output/altera_up_avalon_parallel_port/Altera_UP_Avalon_Parallel_Port_hw.tcl]
+set_global_assignment -name TCL_FILE [file join $::quartus(ip_rootpath) University_Program/Audio_Video/altera_up_avalon_audio/Altera_UP_Avalon_Audio_hw.tcl]
+set_global_assignment -name VERILOG_FILE External_Clocks.v
+ set_global_assignment -name VERILOG_FILE Green_LEDs.v
+ set_global_assignment -name VERILOG_FILE Out_Ports.v
+ set_global_assignment -name VERILOG_FILE Data_Write_MEM.v
+ set_global_assignment -name VERILOG_FILE Pushbuttons.v
+ set_global_assignment -name VERILOG_FILE Addr_Read_MEM.v
+ set_global_assignment -name VERILOG_FILE Data_Read_MEM.v
+ set_global_assignment -name TCL_FILE [file join $::quartus(ip_rootpath) University_Program/altera_up_avalon_external_clocks/Altera_UP_Avalon_External_Clocks_hw.tcl]
+set_global_assignment -name TCL_FILE [file join $::quartus(ip_rootpath) University_Program/Audio_Video/altera_up_avalon_audio_and_video_config/Altera_UP_Avalon_Audio_and_Video_Config_hw.tcl]
+set_global_assignment -name VERILOG_FILE AV_Config.v
+ set_global_assignment -name VERILOG_FILE Audio.v
+ set_global_assignment -name VERILOG_FILE Addr_Write_MEM.v
+ set_global_assignment -name SDC_FILE CPU.sdc
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID 001CBF65A9920000014612774948 
+ 

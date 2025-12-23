@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="nios_system">
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element AV_Config
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element Addr_Read_MEM
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+   }
+   element Addr_Write_MEM
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
+   element Audio
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element CPU
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element CPU_fpoint
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element Data_Read_MEM
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element Data_Write_MEM
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element External_Clocks
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element Green_LEDs
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element JTAG_UART
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element Out_Ports
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element Pushbuttons
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element SDRAM
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{output_language=VERILOG, output_directory=D:\\03_Project\\03_MFCC_Neural\\DE2_Audio}";
+         type = "String";
+      }
+   }
+   element TIMER
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element Audio.avalon_audio_slave
+   {
+      datum baseAddress
+      {
+         value = "16781376";
+         type = "long";
+      }
+   }
+   element External_Clocks.avalon_external_clocks_slave
+   {
+      datum baseAddress
+      {
+         value = "16781512";
+         type = "long";
+      }
+   }
+   element JTAG_UART.avalon_jtag_slave
+   {
+      datum baseAddress
+      {
+         value = "16781504";
+         type = "long";
+      }
+   }
+   element AV_Config.avalon_on_board_config_slave
+   {
+      datum baseAddress
+      {
+         value = "16781312";
+         type = "long";
+      }
+   }
+   element Addr_Read_MEM.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "16781488";
+         type = "long";
+      }
+   }
+   element Data_Read_MEM.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "16781456";
+         type = "long";
+      }
+   }
+   element Green_LEDs.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "16781392";
+         type = "long";
+      }
+   }
+   element Pushbuttons.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "16781408";
+         type = "long";
+      }
+   }
+   element Data_Write_MEM.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "16781440";
+         type = "long";
+      }
+   }
+   element Addr_Write_MEM.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "16781472";
+         type = "long";
+      }
+   }
+   element Out_Ports.avalon_parallel_port_slave
+   {
+      datum baseAddress
+      {
+         value = "16781424";
+         type = "long";
+      }
+   }
+   element clk
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element CPU.jtag_debug_module
+   {
+      datum baseAddress
+      {
+         value = "16779264";
+         type = "long";
+      }
+   }
+   element nios_system
+   {
+   }
+   element TIMER.s1
+   {
+      datum baseAddress
+      {
+         value = "16781344";
+         type = "long";
+      }
+   }
+   element SDRAM.s1
+   {
+      datum baseAddress
+      {
+         value = "8388608";
+         type = "long";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="deviceFamily" value="CYCLONEII" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="hardcopyCompatible" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="projectName" value="DE2_Audio.qpf" />
+ <parameter name="systemHash" value="15064741426" />
+ <parameter name="timeStamp" value="1400733196562" />
+ <module name="clk" kind="clock_source" version="9.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+ </module>
+ <module name="CPU" kind="altera_nios2" version="9.1" enabled="1">
+  <parameter name="userDefinedSettings" value="" />
+  <parameter name="setting_showUnpublishedSettings" value="false" />
+  <parameter name="setting_showInternalSettings" value="false" />
+  <parameter name="setting_shadowRegisterSets" value="0" />
+  <parameter name="setting_preciseSlaveAccessErrorException" value="false" />
+  <parameter name="setting_preciseIllegalMemAccessException" value="false" />
+  <parameter name="setting_preciseDivisionErrorException" value="false" />
+  <parameter name="setting_performanceCounter" value="false" />
+  <parameter name="setting_perfCounterWidth" value="_32" />
+  <parameter name="setting_interruptControllerType" value="Internal" />
+  <parameter name="setting_illegalMemAccessDetection" value="false" />
+  <parameter name="setting_illegalInstructionsTrap" value="false" />
+  <parameter name="setting_fullWaveformSignals" value="false" />
+  <parameter name="setting_extraExceptionInfo" value="false" />
+  <parameter name="setting_exportPCB" value="false" />
+  <parameter name="setting_debugSimGen" value="false" />
+  <parameter name="setting_clearXBitsLDNonBypass" value="true" />
+  <parameter name="setting_branchPredictionType" value="Automatic" />
+  <parameter name="setting_bit31BypassDCache" value="true" />
+  <parameter name="setting_bigEndian" value="false" />
+  <parameter name="setting_bhtPtrSz" value="_8" />
+  <parameter name="setting_bhtIndexPcOnly" value="false" />
+  <parameter name="setting_avalonDebugPortPresent" value="false" />
+  <parameter name="setting_alwaysEncrypt" value="true" />
+  <parameter name="setting_allowFullAddressRange" value="false" />
+  <parameter name="setting_activateTrace" value="true" />
+  <parameter name="setting_activateTestEndChecker" value="false" />
+  <parameter name="setting_activateMonitors" value="true" />
+  <parameter name="setting_activateModelChecker" value="false" />
+  <parameter name="setting_HDLSimCachesCleared" value="true" />
+  <parameter name="setting_HBreakTest" value="false" />
+  <parameter name="resetSlave" value="SDRAM.s1" />
+  <parameter name="resetOffset" value="0" />
+  <parameter name="muldiv_multiplierType" value="EmbeddedMulFast" />
+  <parameter name="muldiv_divider" value="true" />
+  <parameter name="mpu_useLimit" value="false" />
+  <parameter name="mpu_numOfInstRegion" value="8" />
+  <parameter name="mpu_numOfDataRegion" value="8" />
+  <parameter name="mpu_minInstRegionSize" value="_12" />
+  <parameter name="mpu_minDataRegionSize" value="_12" />
+  <parameter name="mpu_enabled" value="false" />
+  <parameter name="mmu_uitlbNumEntries" value="_4" />
+  <parameter name="mmu_udtlbNumEntries" value="_6" />
+  <parameter name="mmu_tlbPtrSz" value="_7" />
+  <parameter name="mmu_tlbNumWays" value="_16" />
+  <parameter name="mmu_processIDNumBits" value="_8" />
+  <parameter name="mmu_enabled" value="false" />
+  <parameter name="mmu_autoAssignTlbPtrSz" value="true" />
+  <parameter name="mmu_TLBMissExcSlave" value="" />
+  <parameter name="mmu_TLBMissExcOffset" value="0" />
+  <parameter name="manuallyAssignCpuID" value="false" />
+  <parameter name="impl" value="Small" />
+  <parameter name="icache_size" value="_4096" />
+  <parameter name="icache_ramBlockType" value="Automatic" />
+  <parameter name="icache_numTCIM" value="_0" />
+  <parameter name="icache_burstType" value="None" />
+  <parameter name="exceptionSlave" value="SDRAM.s1" />
+  <parameter name="exceptionOffset" value="32" />
+  <parameter name="debug_triggerArming" value="true" />
+  <parameter name="debug_level" value="Level2" />
+  <parameter name="debug_jtagInstanceID" value="0" />
+  <parameter name="debug_embeddedPLL" value="true" />
+  <parameter name="debug_debugReqSignals" value="false" />
+  <parameter name="debug_assignJtagInstanceID" value="false" />
+  <parameter name="debug_OCIOnchipTrace" value="_128" />
+  <parameter name="dcache_size" value="_2048" />
+  <parameter name="dcache_ramBlockType" value="Automatic" />
+  <parameter name="dcache_omitDataMaster" value="false" />
+  <parameter name="dcache_numTCDM" value="_0" />
+  <parameter name="dcache_lineSize" value="_32" />
+  <parameter name="dcache_bursts" value="false" />
+  <parameter name="cpuReset" value="false" />
+  <parameter name="cpuID" value="0" />
+  <parameter name="breakSlave">CPU.jtag_debug_module</parameter>
+  <parameter name="breakOffset" value="32" />
+ </module>
+ <module
+   name="SDRAM"
+   kind="altera_avalon_new_sdram_controller"
+   version="9.1"
+   enabled="1">
+  <parameter name="TAC" value="5.5" />
+  <parameter name="TMRD" value="3" />
+  <parameter name="TRCD" value="20.0" />
+  <parameter name="TRFC" value="70.0" />
+  <parameter name="TRP" value="20.0" />
+  <parameter name="TWR" value="14.0" />
+  <parameter name="casLatency" value="3" />
+  <parameter name="columnWidth" value="8" />
+  <parameter name="dataWidth" value="16" />
+  <parameter name="generateSimulationModel" value="false" />
+  <parameter name="initNOPDelay" value="0.0" />
+  <parameter name="initRefreshCommands" value="2" />
+  <parameter name="masteredTristateBridgeSlave" value="" />
+  <parameter name="model" value="custom" />
+  <parameter name="numberOfBanks" value="4" />
+  <parameter name="numberOfChipSelects" value="1" />
+  <parameter name="pinsSharedViaTriState" value="false" />
+  <parameter name="powerUpDelay" value="100.0" />
+  <parameter name="refreshPeriod" value="15.625" />
+  <parameter name="registerDataIn" value="true" />
+  <parameter name="rowWidth" value="12" />
+ </module>
+ <module
+   name="JTAG_UART"
+   kind="altera_avalon_jtag_uart"
+   version="9.1"
+   enabled="1">
+  <parameter name="allowMultipleConnections" value="false" />
+  <parameter name="hubInstanceID" value="0" />
+  <parameter name="readBufferDepth" value="64" />
+  <parameter name="readIRQThreshold" value="8" />
+  <parameter name="simInputCharacterStream" value="" />
+  <parameter name="simInteractiveOptions">INTERACTIVE_ASCII_OUTPUT</parameter>
+  <parameter name="useRegistersForReadBuffer" value="false" />
+  <parameter name="useRegistersForWriteBuffer" value="false" />
+  <parameter name="useRelativePathForSimFile" value="false" />
+  <parameter name="writeBufferDepth" value="64" />
+  <parameter name="writeIRQThreshold" value="8" />
+ </module>
+ <module
+   name="External_Clocks"
+   kind="altera_up_avalon_de_boards"
+   version="9.0"
+   enabled="1">
+  <parameter name="board" value="DE2" />
+  <parameter name="sdram_clk" value="true" />
+  <parameter name="audio_clk" value="true" />
+  <parameter name="vga_clk" value="false" />
+  <parameter name="audio_clk_freq" value="12.288" />
+ </module>
+ <module
+   name="AV_Config"
+   kind="altera_up_avalon_audio_and_video_config"
+   version="9.0"
+   enabled="1">
+  <parameter name="device">On Board - Audio and Video (DE2)</parameter>
+  <parameter name="eai" value="true" />
+  <parameter name="audio_in" value="Microphone to ADC" />
+  <parameter name="dac_enable" value="true" />
+  <parameter name="mic_bypass" value="false" />
+  <parameter name="line_in_bypass" value="false" />
+  <parameter name="mic_attenuation" value="-6dB" />
+  <parameter name="data_format" value="Left Justified" />
+  <parameter name="bit_length" value="16" />
+  <parameter name="bosr" value="250fs/256fs" />
+  <parameter name="sample_rate" value="3" />
+ </module>
+ <module name="Audio" kind="altera_up_avalon_audio" version="9.0" enabled="1">
+  <parameter name="audio_in" value="true" />
+  <parameter name="audio_out" value="true" />
+  <parameter name="dw" value="16" />
+ </module>
+ <module
+   name="CPU_fpoint"
+   kind="altera_nios_custom_instr_floating_point"
+   version="6.1"
+   enabled="1">
+  <parameter name="useDivider" value="true" />
+ </module>
+ <module
+   name="Green_LEDs"
+   kind="altera_up_avalon_parallel_port"
+   version="9.0"
+   enabled="1">
+  <parameter name="board" value="DE2" />
+  <parameter name="preset" value="LEDs" />
+  <parameter name="pushbuttons" value="false" />
+  <parameter name="leds" value="Green" />
+  <parameter name="sevensegs" value="3 to 0" />
+  <parameter name="gpio" value="GPIO 0 (JP1)" />
+  <parameter name="DW" value="9" />
+  <parameter name="direction" value="Output only" />
+  <parameter name="capture" value="false" />
+  <parameter name="edge" value="Rising" />
+  <parameter name="irq" value="false" />
+  <parameter name="irq_type" value="Level" />
+ </module>
+ <module
+   name="Pushbuttons"
+   kind="altera_up_avalon_parallel_port"
+   version="9.0"
+   enabled="1">
+  <parameter name="board" value="DE2" />
+  <parameter name="preset" value="Pushbuttons" />
+  <parameter name="pushbuttons" value="false" />
+  <parameter name="leds" value="Green" />
+  <parameter name="sevensegs" value="3 to 0" />
+  <parameter name="gpio" value="GPIO 0 (JP1)" />
+  <parameter name="DW" value="4" />
+  <parameter name="direction" value="Input only" />
+  <parameter name="capture" value="true" />
+  <parameter name="edge" value="Falling" />
+  <parameter name="irq" value="true" />
+  <parameter name="irq_type" value="Edge" />
+ </module>
+ <module
+   name="Out_Ports"
+   kind="altera_up_avalon_parallel_port"
+   version="9.0"
+   enabled="1">
+  <parameter name="board" value="DE2" />
+  <parameter name="preset" value="Custom" />
+  <parameter name="pushbuttons" value="false" />
+  <parameter name="leds" value="Green" />
+  <parameter name="sevensegs" value="3 to 0" />
+  <parameter name="gpio" value="GPIO 0 (JP1)" />
+  <parameter name="DW" value="32" />
+  <parameter name="direction" value="Output only" />
+  <parameter name="capture" value="false" />
+  <parameter name="edge" value="Rising" />
+  <parameter name="irq" value="false" />
+  <parameter name="irq_type" value="Level" />
+ </module>
+ <module
+   name="Data_Write_MEM"
+   kind="altera_up_avalon_parallel_port"
+   version="9.0"
+   enabled="1">
+  <parameter name="board" value="DE2" />
+  <parameter name="preset" value="Custom" />
+  <parameter name="pushbuttons" value="false" />
+  <parameter name="leds" value="Green" />
+  <parameter name="sevensegs" value="3 to 0" />
+  <parameter name="gpio" value="GPIO 0 (JP1)" />
+  <parameter name="DW" value="32" />
+  <parameter name="direction" value="Output only" />
+  <parameter name="capture" value="false" />
+  <parameter name="edge" value="Rising" />
+  <parameter name="irq" value="false" />
+  <parameter name="irq_type" value="Level" />
+ </module>
+ <module
+   name="Data_Read_MEM"
+   kind="altera_up_avalon_parallel_port"
+   version="9.0"
+   enabled="1">
+  <parameter name="board" value="DE2" />
+  <parameter name="preset" value="Custom" />
+  <parameter name="pushbuttons" value="false" />
+  <parameter name="leds" value="Green" />
+  <parameter name="sevensegs" value="3 to 0" />
+  <parameter name="gpio" value="GPIO 0 (JP1)" />
+  <parameter name="DW" value="32" />
+  <parameter name="direction" value="Input only" />
+  <parameter name="capture" value="false" />
+  <parameter name="edge" value="Rising" />
+  <parameter name="irq" value="true" />
+  <parameter name="irq_type" value="Level" />
+ </module>
+ <module
+   name="Addr_Write_MEM"
+   kind="altera_up_avalon_parallel_port"
+   version="9.0"
+   enabled="1">
+  <parameter name="board" value="DE2" />
+  <parameter name="preset" value="Custom" />
+  <parameter name="pushbuttons" value="false" />
+  <parameter name="leds" value="Green" />
+  <parameter name="sevensegs" value="3 to 0" />
+  <parameter name="gpio" value="GPIO 0 (JP1)" />
+  <parameter name="DW" value="8" />
+  <parameter name="direction" value="Output only" />
+  <parameter name="capture" value="false" />
+  <parameter name="edge" value="Rising" />
+  <parameter name="irq" value="false" />
+  <parameter name="irq_type" value="Level" />
+ </module>
+ <module
+   name="Addr_Read_MEM"
+   kind="altera_up_avalon_parallel_port"
+   version="9.0"
+   enabled="1">
+  <parameter name="board" value="DE2" />
+  <parameter name="preset" value="Custom" />
+  <parameter name="pushbuttons" value="false" />
+  <parameter name="leds" value="Green" />
+  <parameter name="sevensegs" value="3 to 0" />
+  <parameter name="gpio" value="GPIO 0 (JP1)" />
+  <parameter name="DW" value="7" />
+  <parameter name="direction" value="Output only" />
+  <parameter name="capture" value="false" />
+  <parameter name="edge" value="Rising" />
+  <parameter name="irq" value="false" />
+  <parameter name="irq_type" value="Level" />
+ </module>
+ <module name="TIMER" kind="altera_avalon_timer" version="9.1" enabled="1">
+  <parameter name="alwaysRun" value="false" />
+  <parameter name="counterSize" value="32" />
+  <parameter name="fixedPeriod" value="false" />
+  <parameter name="period" value="1" />
+  <parameter name="periodUnits" value="MSEC" />
+  <parameter name="resetOutput" value="false" />
+  <parameter name="snapshot" value="true" />
+  <parameter name="timeoutPulseOutput" value="false" />
+  <parameter name="timerPreset" value="CUSTOM" />
+ </module>
+ <connection kind="clock" version="9.1" start="clk.clk" end="CPU.clk" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.instruction_master"
+   end="CPU.jtag_debug_module">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01000800" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="CPU.jtag_debug_module">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01000800" />
+ </connection>
+ <connection kind="clock" version="9.1" start="clk.clk" end="SDRAM.clk" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.instruction_master"
+   end="SDRAM.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00800000" />
+ </connection>
+ <connection kind="avalon" version="6.1" start="CPU.data_master" end="SDRAM.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00800000" />
+ </connection>
+ <connection kind="clock" version="9.1" start="clk.clk" end="JTAG_UART.clk" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="JTAG_UART.avalon_jtag_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x010010c0" />
+ </connection>
+ <connection kind="interrupt" version="9.1" start="CPU.d_irq" end="JTAG_UART.irq">
+  <parameter name="irqNumber" value="0" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="External_Clocks.avalon_external_clocks_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x010010c8" />
+ </connection>
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk.clk"
+   end="External_Clocks.clock_reset" />
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk.clk"
+   end="AV_Config.clock_reset" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="AV_Config.avalon_on_board_config_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01001000" />
+ </connection>
+ <connection kind="clock" version="9.1" start="clk.clk" end="Audio.clock_reset" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="Audio.avalon_audio_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01001040" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="9.1"
+   start="CPU.d_irq"
+   end="Audio.interrupt">
+  <parameter name="irqNumber" value="1" />
+ </connection>
+ <connection
+   kind="nios_custom_instruction"
+   version="9.1"
+   start="CPU.custom_instruction_master"
+   end="CPU_fpoint.s1">
+  <parameter name="CIName" value="fpoint" />
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="252" />
+ </connection>
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk.clk"
+   end="Green_LEDs.clock_reset" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="Green_LEDs.avalon_parallel_port_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01001050" />
+ </connection>
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk.clk"
+   end="Pushbuttons.clock_reset" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="Pushbuttons.avalon_parallel_port_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01001060" />
+ </connection>
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk.clk"
+   end="Out_Ports.clock_reset" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="Out_Ports.avalon_parallel_port_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01001070" />
+ </connection>
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk.clk"
+   end="Data_Write_MEM.clock_reset" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="Data_Write_MEM.avalon_parallel_port_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01001080" />
+ </connection>
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk.clk"
+   end="Data_Read_MEM.clock_reset" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="Data_Read_MEM.avalon_parallel_port_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01001090" />
+ </connection>
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk.clk"
+   end="Addr_Write_MEM.clock_reset" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="Addr_Write_MEM.avalon_parallel_port_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x010010a0" />
+ </connection>
+ <connection
+   kind="clock"
+   version="9.1"
+   start="clk.clk"
+   end="Addr_Read_MEM.clock_reset" />
+ <connection
+   kind="avalon"
+   version="6.1"
+   start="CPU.data_master"
+   end="Addr_Read_MEM.avalon_parallel_port_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x010010b0" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="9.1"
+   start="CPU.d_irq"
+   end="Pushbuttons.interrupt">
+  <parameter name="irqNumber" value="2" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="9.1"
+   start="CPU.d_irq"
+   end="Data_Read_MEM.interrupt">
+  <parameter name="irqNumber" value="3" />
+ </connection>
+ <connection kind="clock" version="9.1" start="clk.clk" end="TIMER.clk" />
+ <connection kind="avalon" version="6.1" start="CPU.data_master" end="TIMER.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01001020" />
+ </connection>
+ <connection kind="interrupt" version="9.1" start="CPU.d_irq" end="TIMER.irq">
+  <parameter name="irqNumber" value="4" />
+ </connection>
+</system>
